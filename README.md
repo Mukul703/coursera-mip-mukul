@@ -1,6 +1,18 @@
 # Coursera Multimodal Intelligence Platform (MIP)
 
-Coursera-MIP is an AI-powered curriculum analytics and multimodal diagnostic engine. It indexes lecture videos, transcripts, and slides into a unified vector space, synthesizes pedagogical friction diagnostics via LLM reasoning, and delivers a human-in-the-loop recommendation escalation pipeline.
+## Individual Project Submission
+
+This repository contains the complete Coursera Multimodal Intelligence Platform developed as a group project.
+
+My primary contribution focused on the data and database layer of the system, including data collection and source validation, multimodal data structuring, embedding generation, Qdrant vector storage and ingestion, visual asset integration, and data validation.
+
+---
+
+## Project Overview
+
+Coursera-MIP is an AI-powered curriculum analytics and multimodal diagnostic engine. It processes course videos, captions, slides, video frames, quizzes, and discussions into a unified retrieval system, synthesizes pedagogical friction diagnostics through LLM reasoning, and delivers a human-in-the-loop recommendation pipeline.
+
+The system is designed not only to answer questions from course material, but also to identify learning friction, provide grounded evidence, and generate actionable curriculum recommendations.
 
 ---
 
@@ -37,4 +49,48 @@ coursera-mip/
 ├── backend/    # FastAPI server, RAG retrieval & synthesis pipeline, MCP server
 ├── database/   # Multimodal extraction, ingestion pipelines, and Supabase SQL
 └── frontend/   # Next.js web application, diagnostic dashboard, and chat interface
-```
+---
+
+## My Contribution
+
+My contribution to the project focused primarily on the data collection, multimodal processing, vector database, and data validation layers.
+
+### Data Collection & Source Validation
+- Collected and validated course materials from MIT OpenCourseWare.
+- Worked with raw course assets including videos, WebVTT captions, transcript PDFs, slide PDFs, quizzes, and discussion data.
+- Structured the collected material for downstream processing and retrieval.
+
+### Multimodal Data Structuring
+- Processed and organized five content types:
+  - Captions
+  - Slides
+  - Video Frames
+  - Quizzes
+  - Discussions
+- Maintained shared identifiers such as `course_id`, `module_id`, and `lecture_id`.
+- Established links between visual content, transcript chunks, quizzes, and discussions for cross-modal traceability.
+
+### Embedding Generation
+- Generated semantic embeddings using `BAAI/bge-base-en-v1.5`.
+- Used 768-dimensional normalized embeddings with cosine similarity.
+- Prepared searchable representations for the different content types.
+- Used Gemini-generated textual analysis for visual content before embedding.
+
+### Qdrant Vector Database & Ingestion
+- Designed and populated the centralized Qdrant vector collection.
+- Configured the collection with 768-dimensional vectors and cosine similarity.
+- Integrated content metadata with vector records for retrieval and traceability.
+- Implemented embedding validation, deterministic point IDs, batch ingestion, and record-level checks.
+- Contributed to the final indexed dataset of 5,285 multimodal records.
+
+### Visual Asset Integration
+- Integrated slide and video-frame assets with the private Hugging Face visual dataset.
+- Maintained references between Qdrant records and their corresponding visual assets.
+- Validated asset paths, record mappings, and metadata.
+- Kept visual assets separately stored while maintaining their references in the vector database.
+
+### Data Validation & Traceability
+- Validated processed records before vector ingestion.
+- Verified embedding dimensions, record identifiers, and content-type consistency.
+- Validated visual asset mappings and database records.
+- Maintained traceability between retrieved evidence and the original course material.
