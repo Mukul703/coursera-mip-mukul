@@ -399,7 +399,7 @@ The Qdrant collection contains the indexed multimodal records and metadata used 
 
 ### Hugging Face Visual Asset Repository
 
-![Hugging Face Visual Dataset](docs/screenshots/huggingface.png)
+![Hugging Face Visual Dataset](docs/screenshots/hugging-face.png)
 
 The project uses a private Hugging Face dataset to store the visual assets used by the multimodal pipeline.
 
