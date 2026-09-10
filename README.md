@@ -504,6 +504,3 @@ This work contributed to making the course content structured, searchable, trace
 
 ---
 
-## Note
-
-This repository is an individual submission copy of the group-developed project. The complete project structure is retained to demonstrate the end-to-end system, while the sections above identify the areas primarily contributed by me.
