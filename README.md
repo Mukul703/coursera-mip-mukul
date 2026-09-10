@@ -397,6 +397,17 @@ The recommendation interface presents actionable curriculum improvements generat
 
 The Qdrant collection contains the indexed multimodal records and metadata used for semantic retrieval.
 
+### Hugging Face Visual Asset Repository
+
+![Hugging Face Visual Dataset](docs/screenshots/huggingface.png)
+
+The project uses a private Hugging Face dataset to store the visual assets used by the multimodal pipeline.
+
+- **Dataset:** `COURSEERA_ALMAX_VISUALS`
+- **Visual Assets:** 2,687
+- **Slides:** 1,420
+- **Video Frames:** 1,267
+- **Purpose:** Stores the actual visual assets referenced by Qdrant.
 
 ### Supabase Application Database
 
