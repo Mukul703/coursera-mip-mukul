@@ -92,5 +92,13 @@ My contribution to the project focused primarily on the data collection, multimo
 ### Data Validation & Traceability
 - Validated processed records before vector ingestion.
 - Verified embedding dimensions, record identifiers, and content-type consistency.
+
+## Project Video
+
+[Watch the Project Demo Video](https://drive.google.com/file/d/13SWctYDT1XgK2wI2tzfLNROCpYlUjAtU/view?usp=sharing)
+
+## Live Project
+
+[Open the Live Application](https://coursera-mip.vercel.app/)
 - Validated visual asset mappings and database records.
 - Maintained traceability between retrieved evidence and the original course material.
