@@ -397,7 +397,6 @@ The recommendation interface presents actionable curriculum improvements generat
 
 The Qdrant collection contains the indexed multimodal records and metadata used for semantic retrieval.
 
-![Qdrant Vector Database](docs/screenshots/qdrant.png)
 
 ### Supabase Application Database
 
