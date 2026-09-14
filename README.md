@@ -1,3 +1,14 @@
+![Python](https://img.shields.io/badge/Python-Data%20Processing-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-150458)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243)
+![Qdrant](https://img.shields.io/badge/Qdrant-Vector%20Database-red)
+![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model%20%26%20Dataset-yellow)
+![Google Gemini](https://img.shields.io/badge/Gemini-Multimodal%20AI-4285F4)
+![Sentence Transformers](https://img.shields.io/badge/Sentence%20Transformers-Embeddings-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8)
+![PyMuPDF](https://img.shields.io/badge/PyMuPDF-PDF%20Processing-green)
+
 # Coursera Multimodal Intelligence Platform (MIP)
 
 ## Individual Project Submission
